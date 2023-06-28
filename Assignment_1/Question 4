@@ -1,0 +1,20 @@
+Question:-
+
+WAP to rotate the string ‘brainmentors in the right direction. This is done by periodically removing one letter from the string end and attaching it to the front.
+
+input  = brainmentors
+
+output = sbrainmentor
+
+
+Answer:- 
+
+var s = 'brainmentors'
+s = s[s.length - 1] + s.substring(0,s.length-1);
+console.log(s);
+
+
+
+Output:-
+
+VM2561:3 sbrainmentor
