@@ -1,0 +1,21 @@
+Question:-
+
+WAP to find out if 1st January will be a Sunday between 2000 and 2030
+
+
+Answer:-
+
+for(var year = 2000; year <= 2030; year++){
+    var date = new Date(year, 0, 1);
+    if(date.getDay() === 0){
+        console.log(` 1st Jan is Sunday in ${year}`);
+    }
+}
+
+
+Output:-
+
+VM2945:4  1st Jan is Sunday in 2006
+VM2945:4  1st Jan is Sunday in 2012
+VM2945:4  1st Jan is Sunday in 2017
+VM2945:4  1st Jan is Sunday in 2023
