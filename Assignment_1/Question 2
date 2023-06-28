@@ -1,1 +1,34 @@
+Write a JavaScript program to get the current date.
+Expected Output :
+mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
+
+Answer:-
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1;
+var yy = today.getFullYear();
+
+if(dd < 10){
+    dd='0'+dd;
+}
+if(mm < 10){
+    mm = '0'+mm;
+}
+if(yy <10){
+    yy = '0'+yy; 
+        }
+
+console.log(`${mm}-${dd}-${yy}`);
+console.log(`${mm}/${dd}/${yy}`);
+console.log(`${dd}-${mm}-${yy}`);
+console.log(`${dd}/${mm}/${yy}`);
+
+
+Output:-
+
+VM1615:16 06-28-2023
+VM1615:17 06/28/2023
+VM1615:18 28-06-2023
+VM1615:19 28/06/2023
