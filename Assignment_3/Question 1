@@ -1,0 +1,46 @@
+Question:-
+
+Write a function calculate that takes three arugments from the user, say num1 , num2, and operation(1==add, 2==subtract, 
+3==multiply, 4==divide ).Don`t use switch statement or if else statements
+ 
+1.add,
+2.subtract,
+3.multiply,
+4.divide 
+
+write the calc function for all the operations
+
+
+
+Answer:-
+
+function Calc(){
+var add = function(x,y){
+    return x+y;
+}
+var sub = function(x,y){
+    return x-y;
+}
+var mul = function(x,y){
+    return x*y;
+}
+var div = function(x,y){
+    return x/y;
+}
+
+
+return [add,sub,mul,div];
+   
+}
+
+function calculate(num1, num2, op){
+    op = op-1;
+   
+    console.log(Calc()[op](num1, num2));
+}
+calculate(3,3,1);
+
+
+Output:-
+
+VM120:23 6
