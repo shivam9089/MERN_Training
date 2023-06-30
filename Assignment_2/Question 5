@@ -16,6 +16,41 @@ S 1
 
 Answer:-
 
+function occurence(str){
+    var obj={};
+    var len=str.length;
+    for(var i=0;i<len;i++){
+        if(obj[str[i]]=== undefined){
+            obj[str[i]]=1;
+        }
+        else{
+            obj[str[i]]=obj[str[i]]+1;
+        }
+    }
+    for(var key in obj){
+        console.log(key,obj[key]);
+    }
+}
+
+occurence('brainmentors');
+
+
+Output:-
+
+VM1355:13 b 1
+VM1355:13 r 2
+VM1355:13 a 1
+VM1355:13 i 1
+VM1355:13 n 2
+VM1355:13 m 1
+VM1355:13 e 1
+VM1355:13 t 1
+VM1355:13 o 1
+VM1355:13 s 1
+
+========================================================== OR =======================================================================================
+
+
 function occurrence(s){
     var listOfChar = new Set(s.split('')), result = new Map(), count = 0;
     for(item of listOfChar){
