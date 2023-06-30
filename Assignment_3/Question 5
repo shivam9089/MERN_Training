@@ -1,0 +1,51 @@
+Question:-
+
+Write a function to find the maximum and minimum elements in an array
+
+
+Answer:-
+
+function maxmin(arr){
+    var mini = Infinity;
+    var maxi = -Infinity;
+    for(var i=0; i<arr.length; i++){
+        if(arr[i]>maxi){
+            maxi = arr[i];
+        }
+        if(arr[i]<mini){
+            mini = arr[i];
+        }
+
+    }
+      console.log(`Minimum is ${mini}  Maximum is ${maxi} `);  
+
+}
+
+var arr = [10,3,15,-1,9,6];
+    maxmin(arr);
+    
+
+Output:-
+
+VM1295:13 Minimum is -1  Maximum is 15
+
+
+====================================================================== OR=================================================================
+
+function findMinMax(Arr) {
+	
+
+	let minValue = Math.min(...Arr);
+	let maxValue = Math.max(...Arr);
+	
+	console.log("Minimum element is:" + minValue);
+	console.log("Maximum Element is:" + maxValue);
+}
+var arr = [10,3,23,-1,-9,6];
+findMinMax(arr);
+
+
+Output:-
+
+VM1324:7 Minimum element is:-9
+VM1324:8 Maximum Element is:23
