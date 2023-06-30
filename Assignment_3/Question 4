@@ -1,0 +1,49 @@
+Question:-
+
+Create a function Employee, having id, name, basic_Salary as arguments.
+
+Compute HRA, DA, TA, GS, NS.
+
+HRA is 30% of Basic Salary.
+DA is 10% of Basic Salary.
+TA is 20% of Basic Salary.
+
+GS = Basic Salary + HRA + DA + TA;
+
+TAX DEDUCTION is 10% of GS.
+
+NS = GS - TAX DEDUCTION.
+
+NOte : Use Basic Salary in Lexical Scope 
+Print salary slip of the employee.
+
+
+
+Answer:-
+
+function Employee(id, name, basic_Salary){
+
+        function salary() {
+        var hra = basic_Salary*0.3;
+        var da = basic_Salary*0.1;
+        var ta = basic_Salary*0.2;
+
+        
+        
+        var gs = basic_Salary + hra + da + ta;
+        
+        
+        var td = gs*0.1;
+
+        var ns = gs-td;
+        console.log(`Id :- ${id} Name :- ${name}  Net Salary:- ${ns}`);
+    }
+    return {salary};
+}
+
+Employee(1,"shivam", 10000).salary();
+
+
+Output:-
+
+VM840:16 Id :- 1 Name :- shivam  Net Salary:- 14400
