@@ -1,0 +1,34 @@
+Question:-
+
+Given two strings, return true if they are anagrams of one another
+
+For example: Mary is an anagram of Army
+
+
+Answer:-
+
+function check(a,b){
+    if(a === b){
+        console.log("not anagram");
+        return;
+    }
+    if(a.length === b.length){
+    var str1 = a.split('').sort().join('');
+    var str2 = a.split('').sort().join('');
+
+        if(str1 === str2 ){
+            console.log("Anagram");}
+        else{
+            console.log("Not");
+        }
+    }else{
+        console.log("Not anagram");
+
+    }
+}
+check("rome","more");
+
+
+Output:-
+
+VM2118:11 Anagram
