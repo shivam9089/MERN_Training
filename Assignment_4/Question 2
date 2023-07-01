@@ -1,0 +1,20 @@
+Question:-
+
+Reverse a given string using reverse() method 
+input = "BrainMentors"
+output = "srotnemniarB"
+
+
+Answer:-
+
+var input = "BrainMentors"
+var arr = input.split("");
+arr.reverse()
+arr.join('');
+
+
+Output:-
+
+'srotneMniarB'
+
+
