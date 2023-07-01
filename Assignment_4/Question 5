@@ -1,0 +1,23 @@
+Question:-
+
+Write a function to reverse the order of elements in an array.
+don't Use reverse() Method 
+ex:- var arr = ['a','b','c','d','e','f']
+			
+		output = ['f','e','d','c','b','a']
+
+
+
+
+Answer:-
+
+function rev(arr){
+    console.log(arr.sort((a,b)=> b.localeCompare(a)));
+}
+var arr = ['a','b','c','d','e','f'];
+rev(arr);
+
+
+Output:-
+
+VM1110:2 (6) ['f', 'e', 'd', 'c', 'b', 'a']
