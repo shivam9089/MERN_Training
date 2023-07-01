@@ -1,0 +1,26 @@
+Question:-
+
+Write a function to find the sum of all elements in an array.
+ex:- arr = [1,2,3,4,5];
+
+output = 15;
+
+
+
+
+Answer:-
+
+function fun(arr){
+
+console.log(arr.reduce((acc,e)=>acc+e,0));
+}
+
+var arr = [1,2,3,4,5];
+fun(arr);
+
+
+
+
+Output:-
+
+VM877:3 15
