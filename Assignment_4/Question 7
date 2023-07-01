@@ -1,0 +1,31 @@
+Question:-
+
+Write a function to find the second largest number in an array.
+
+ex:- var arr = [12,4,6,9,2,15,3,9];
+		
+		output second largest : 12
+
+
+
+Answer:-
+
+function secondLar(arr){
+    arr.sort((a,b)=>b-a);
+    var a = arr[0];
+    var i = 0;
+    while(arr[i] === a){
+        arr.shift()
+        
+    }
+    arr.sort((a,b)=>b-a);
+    console.log(arr[0]);
+}
+
+var arr = [12,4,6,9,2,15,15,3,9]; 
+secondLar(arr);
+
+
+Output:-
+
+VM1925:10 12
